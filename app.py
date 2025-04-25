@@ -1,11 +1,5 @@
 import os
 import subprocess
-
-# Ensure spaCy model is downloaded
-try:
-    import en_core_web_sm
-except ImportError:
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
 import streamlit as st
 import pandas as pd
 import os
